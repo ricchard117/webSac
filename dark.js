@@ -27,7 +27,7 @@ am4internal_webpackJsonp(["356d"], {
             r = c("8ZqG"),
             o = function(t) {
                 Object(b.b)(t, "InterfaceColorSet") && 
-				(t.setFor("stroke", Object(r.c)("#000000")), 
+				(t.setFor("stroke", Object(r.c)("#1e1e23")), 
 				 t.setFor("fill", Object(r.c)("#2b2b2b")), 
 				 t.setFor("primaryButton", Object(r.c)("#6794dc").lighten(-.2)), 
 				 t.setFor("primaryButtonHover", Object(r.c)("#6771dc").lighten(-.2)),
@@ -45,7 +45,7 @@ am4internal_webpackJsonp(["356d"], {
 				 t.setFor("background", Object(r.c)("#1e1e23")), 
 				 t.setFor("alternativeBackground", Object(r.c)("#1e1e23")), 
 				 t.setFor("text", Object(r.c)("#ffffff")), 
-				 t.setFor("alternativeText", Object(r.c)("#000000")), 
+				 t.setFor("alternativeText", Object(r.c)("#1e1e23")), 
 				 t.setFor("disabledBackground", Object(r.c)("#bbbbbb"))), 
 				 Object(b.b)(t, "Scrollbar") && (t.background.fillOpacity = .98, 
 				 t.thumb.background.fillOpacity = .98)
