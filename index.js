@@ -14,88 +14,88 @@ var colorSet = new am4core.ColorSet();
 colorSet.saturation = 0.5;
 
 chart.data = [{
-    "category": "Module #1",
-    "start": "2019-01-10",
-    "end": "2019-01-13",
+    "category": "Especializado",
+    "start": "2020-01-10",
+    "end": "2020-01-13",
     "color": colorSet.getIndex(0),
     "task": "Gathering requirements"
 }, {
-    "category": "Module #1",
-    "start": "2019-02-05",
-    "end": "2019-04-18",
+    "category": "Especializado",
+    "start": "2020-02-05",
+    "end": "2020-04-18",
     "color": colorSet.getIndex(0),
     "task": "Development"
 }, {
-    "category": "Module #2",
-    "start": "2019-01-08",
-    "end": "2019-01-10",
+    "category": "Mascotas",
+    "start": "2020-01-08",
+    "end": "2020-01-10",
     "color": colorSet.getIndex(5),
     "task": "Gathering requirements"
 }, {
-    "category": "Module #2",
-    "start": "2019-01-12",
-    "end": "2019-01-15",
+    "category": "Mascotas",
+    "start": "2020-01-12",
+    "end": "2020-01-15",
     "color": colorSet.getIndex(5),
     "task": "Producing specifications"
 }, {
-    "category": "Module #2",
-    "start": "2019-01-16",
-    "end": "2019-02-05",
+    "category": "Mascotas",
+    "start": "2020-01-16",
+    "end": "2020-02-05",
     "color": colorSet.getIndex(5),
     "task": "Development"
 }, {
-    "category": "Module #2",
-    "start": "2019-02-10",
-    "end": "2019-02-18",
+    "category": "Mascotas",
+    "start": "2020-02-10",
+    "end": "2020-02-18",
     "color": colorSet.getIndex(5),
     "task": "Testing and QA"
 }, {
     "category": ""
 }, {
-    "category": "Module #3",
-    "start": "2019-01-01",
-    "end": "2019-01-19",
+    "category": "Ropa",
+    "start": "2020-01-01",
+    "end": "2020-01-19",
     "color": colorSet.getIndex(9),
     "task": "Gathering requirements"    
 }, {
-    "category": "Module #3",
-    "start": "2019-02-01",
-    "end": "2019-02-10",
+    "category": "Ropa",
+    "start": "2020-02-01",
+    "end": "2020-02-10",
     "color": colorSet.getIndex(9),
     "task": "Producing specifications"
 }, {
-    "category": "Module #3",
-    "start": "2019-03-10",
-    "end": "2019-04-15",
+    "category": "Ropa",
+    "start": "2020-03-10",
+    "end": "2020-04-15",
     "color": colorSet.getIndex(9),
     "task": "Development"
 }, {
-    "category": "Module #3",
-    "start": "2019-04-20",
-    "end": "2019-04-30",
+    "category": "Ropa",
+    "start": "2020-04-20",
+    "end": "2020-04-30",
     "color": colorSet.getIndex(9),
     "task": "Testing and QA",
     "disabled2":false,
     "image2":"rachel.jpg",
     "location":0
 }, {
-    "category": "Module #4",
-    "start": "2019-01-15",
-    "end": "2019-02-12",
+    "category": "Multiusos",
+    "start": "2020-01-15",
+    "end": "2020-02-12",
     "color": colorSet.getIndex(15),
     "task": "Gathering requirements",
     "disabled1":false,
     "image1":"monica.jpg"
 }, {
-    "category": "Module #4",
-    "start": "2019-02-25",
-    "end": "2019-03-10",
+    "category": "Multiusos",
+    "start": "2020-02-25",
+    "end": "2020-03-10",
     "color": colorSet.getIndex(15),
     "task": "Development"
 }, {
-    "category": "Module #4",
-    "start": "2019-03-23",
-    "end": "2019-04-29",
+    "category": "Multiusos",
+    "start": "2020-03-23",
+    "end": "2020-04-29",
     "color": colorSet.getIndex(15),
     "task": "Testing and QA"
 }];
@@ -182,13 +182,13 @@ var eventSeries = chart.series.push(new am4plugins_timeline.CurveLineSeries());
 eventSeries.dataFields.dateX = "eventDate";
 eventSeries.dataFields.categoryY = "category";
 eventSeries.data = [
-    { category: "", eventDate: "2019-01-15", letter: "A", description: "Something happened here" },
-    { category: "", eventDate: "2019-01-23", letter: "B", description: "Something happened here" },
-    { category: "", eventDate: "2019-02-10", letter: "C", description: "Something happened here" },
-    { category: "", eventDate: "2019-02-29", letter: "D", description: "Something happened here" },
-    { category: "", eventDate: "2019-03-06", letter: "E", description: "Something happened here" },
-    { category: "", eventDate: "2019-03-12", letter: "F", description: "Something happened here" },
-    { category: "", eventDate: "2019-03-22", letter: "G", description: "Something happened here" }];
+    { category: "", eventDate: "2020-01-15", letter: "A", description: "Something happened here" },
+    { category: "", eventDate: "2020-01-23", letter: "B", description: "Something happened here" },
+    { category: "", eventDate: "2020-02-10", letter: "C", description: "Something happened here" },
+    { category: "", eventDate: "2020-02-29", letter: "D", description: "Something happened here" },
+    { category: "", eventDate: "2020-03-06", letter: "E", description: "Something happened here" },
+    { category: "", eventDate: "2020-03-12", letter: "F", description: "Something happened here" },
+    { category: "", eventDate: "2020-03-22", letter: "G", description: "Something happened here" }];
 eventSeries.strokeOpacity = 0;
 
 var flagBullet = eventSeries.bullets.push(new am4plugins_bullets.FlagBullet())
