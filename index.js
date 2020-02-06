@@ -189,7 +189,7 @@ eventSeries.data = [
     { category: "", eventDate: "2020-03-06", letter: "E", description: "Something happened here" },
     { category: "", eventDate: "2020-03-12", letter: "F", description: "Something happened here" },
     { category: "", eventDate: "2020-03-22", letter: "G", description: "Something happened here" },
-    { category: "", eventDate: "2020-05-01", letter: "H", description: "HOLI" }];
+    { category: "", eventDate: "2020-03-30", letter: "H", description: "" }];
 eventSeries.strokeOpacity = 0;
 
 var flagBullet = eventSeries.bullets.push(new am4plugins_bullets.FlagBullet())
