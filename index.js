@@ -15,64 +15,64 @@ colorSet.saturation = 0.5;
 
 chart.data = [{
     "category": "Especializado",
-    "start": "2020-01-10",
-    "end": "2020-01-13",
+    "start": "2020-01-01",
+    "end": "2020-01-31",
     "color": colorSet.getIndex(2),
     "task": "Gathering requirements"
 }, {
     "category": "Especializado",
-    "start": "2020-02-05",
-    "end": "2020-04-18",
+   "start": "2020-01-01",
+    "end": "2020-01-31",
     "color": colorSet.getIndex(0),
     "task": "Development"
 }, {
     "category": "Mascotas",
-    "start": "2020-01-08",
-    "end": "2020-01-10",
+   "start": "2020-01-01",
+    "end": "2020-01-31",
     "color": colorSet.getIndex(5),
     "task": "Gathering requirements"
 }, {
     "category": "Mascotas",
-    "start": "2020-01-12",
-    "end": "2020-01-15",
+    "start": "2020-01-01",
+    "end": "2020-01-31",
     "color": colorSet.getIndex(5),
     "task": "Producing specifications"
 }, {
     "category": "Mascotas",
-    "start": "2020-01-16",
-    "end": "2020-02-05",
+   "start": "2020-01-01",
+    "end": "2020-01-31",
     "color": colorSet.getIndex(5),
     "task": "Development"
 }, {
     "category": "Mascotas",
-    "start": "2020-02-10",
-    "end": "2020-02-18",
+    "start": "2020-01-01",
+    "end": "2020-01-31",
     "color": colorSet.getIndex(5),
     "task": "Testing and QA"
 }, {
     "category": ""
 }, {
     "category": "Ropa",
-    "start": "2020-01-01",
-    "end": "2020-01-19",
+   "start": "2020-01-01",
+    "end": "2020-01-31",
     "color": colorSet.getIndex(9),
     "task": "Gathering requirements"    
 }, {
     "category": "Ropa",
-    "start": "2020-02-01",
-    "end": "2020-02-10",
+   "start": "2020-01-01",
+    "end": "2020-01-31",
     "color": colorSet.getIndex(9),
     "task": "Producing specifications"
 }, {
     "category": "Ropa",
-    "start": "2020-03-10",
-    "end": "2020-04-15",
+    "start": "2020-01-01",
+    "end": "2020-01-31",
     "color": colorSet.getIndex(9),
     "task": "Development"
 }, {
     "category": "Ropa",
-    "start": "2020-04-20",
-    "end": "2020-04-30",
+    "start": "2020-01-01",
+    "end": "2020-01-31",
     "color": colorSet.getIndex(9),
     "task": "Testing and QA",
     "disabled2":false,
@@ -80,22 +80,22 @@ chart.data = [{
     "location":0
 }, {
     "category": "Multiusos",
-    "start": "2020-01-15",
-    "end": "2020-02-12",
+    "start": "2020-01-01",
+    "end": "2020-01-31",
     "color": colorSet.getIndex(15),
     "task": "Gathering requirements",
     "disabled1":false,
     "image1":"monica.jpg"
 }, {
     "category": "Multiusos",
-    "start": "2020-02-25",
-    "end": "2020-03-10",
+   "start": "2020-01-01",
+    "end": "2020-01-31",
     "color": colorSet.getIndex(15),
     "task": "Development"
 }, {
     "category": "Multiusos",
-    "start": "2020-03-23",
-    "end": "2020-04-29",
+    "start": "2020-01-01",
+    "end": "2020-01-31",
     "color": colorSet.getIndex(15),
     "task": "Testing and QA"
 }];
@@ -183,13 +183,13 @@ eventSeries.dataFields.dateX = "eventDate";
 eventSeries.dataFields.categoryY = "category";
 eventSeries.data = [
     { category: "", eventDate: "2020-01-15", letter: "A", description: "Something happened here" },
-    { category: "", eventDate: "2020-01-23", letter: "B", description: "Something happened here" },
-    { category: "", eventDate: "2020-02-10", letter: "C", description: "Something happened here" },
-    { category: "", eventDate: "2020-02-29", letter: "D", description: "Something happened here" },
-    { category: "", eventDate: "2020-03-06", letter: "E", description: "Something happened here" },
-    { category: "", eventDate: "2020-03-12", letter: "F", description: "Something happened here" },
-    { category: "", eventDate: "2020-03-22", letter: "G", description: "Something happened here" },
-    { category: "", eventDate: "2020-03-30", letter: "H", description: "holi" }];
+    { category: "", eventDate: "2020-01-16", letter: "B", description: "Something happened here" },
+    { category: "", eventDate: "2020-01-17", letter: "C", description: "Something happened here" },
+    { category: "", eventDate: "2020-01-18", letter: "D", description: "Something happened here" },
+    { category: "", eventDate: "2020-01-19", letter: "E", description: "Something happened here" },
+    { category: "", eventDate: "2020-01-20", letter: "F", description: "Something happened here" },
+    { category: "", eventDate: "2020-01-21", letter: "G", description: "Something happened here" },
+    { category: "", eventDate: "2020-01-31", letter: "H", description: "holi" }];
 eventSeries.strokeOpacity = 0;
 
 var flagBullet = eventSeries.bullets.push(new am4plugins_bullets.FlagBullet())
