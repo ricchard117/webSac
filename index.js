@@ -14,90 +14,82 @@ var colorSet = new am4core.ColorSet();
 colorSet.saturation = 0.5;
 
 chart.data = [{
-    "category": "Especializado",
+    "category": "Ropa",
     "start": "2020-01-01",
-    "end": "2020-01-31",
+    "end": "2020-01-06",
+    "color": colorSet.getIndex(1),
+    "task": "PED_19827445"
+}, { 
+    "category": "Especializado",
+    "start": "2020-01-02",
+    "end": "2020-01-03",
     "color": colorSet.getIndex(2),
-    "task": "Gathering requirements"
-}, {
+    "task": "PED_34672965"
+}, { 
+    "category": "Mascotas",
+    "start": "2020-01-03",
+    "end": "2020-01-05",
+    "color": colorSet.getIndex(3),
+    "task": "PED_49518485"
+}, { 
     "category": "Especializado",
-   "start": "2020-01-01",
-    "end": "2020-01-31",
-    "color": colorSet.getIndex(0),
-    "task": "Development"
-}, {
-    "category": "Mascotas",
-   "start": "2020-01-01",
-    "end": "2020-01-31",
-    "color": colorSet.getIndex(5),
-    "task": "Gathering requirements"
-}, {
-    "category": "Mascotas",
-    "start": "2020-01-01",
-    "end": "2020-01-31",
-    "color": colorSet.getIndex(5),
-    "task": "Producing specifications"
-}, {
-    "category": "Mascotas",
-   "start": "2020-01-01",
-    "end": "2020-01-31",
-    "color": colorSet.getIndex(5),
-    "task": "Development"
-}, {
-    "category": "Mascotas",
-    "start": "2020-01-01",
-    "end": "2020-01-31",
-    "color": colorSet.getIndex(5),
-    "task": "Testing and QA"
-}, {
-    "category": ""
-}, {
+    "start": "2020-01-04",
+    "end": "2020-01-06",
+    "color": colorSet.getIndex(2),
+    "task": "PED_64364005"
+}, { 
+    "category": "Multiusos",
+    "start": "2020-01-05",
+    "end": "2020-01-12",
+    "color": colorSet.getIndex(4),
+    "task": "PED_79209525"
+}, { 
+    "category": "Especializado",
+    "start": "2020-01-06",
+    "end": "2020-01-09",
+    "color": colorSet.getIndex(2),
+    "task": "PED_94055045"
+}, { 
     "category": "Ropa",
-   "start": "2020-01-01",
-    "end": "2020-01-31",
-    "color": colorSet.getIndex(9),
-    "task": "Gathering requirements"    
-}, {
-    "category": "Ropa",
-   "start": "2020-01-01",
-    "end": "2020-01-31",
-    "color": colorSet.getIndex(9),
-    "task": "Producing specifications"
-}, {
-    "category": "Ropa",
-    "start": "2020-01-01",
-    "end": "2020-01-31",
-    "color": colorSet.getIndex(9),
-    "task": "Development"
-}, {
-    "category": "Ropa",
-    "start": "2020-01-01",
-    "end": "2020-01-31",
-    "color": colorSet.getIndex(9),
-    "task": "Testing and QA",
-    "disabled2":false,
-    "image2":"rachel.jpg",
-    "location":0
+    "start": "2020-01-09",
+    "end": "2020-01-11",
+    "color": colorSet.getIndex(1),
+    "task": "PED_108900565"
+}, { 
+    "category": "Mascotas",
+    "start": "2020-01-10",
+    "end": "2020-01-28",
+    "color": colorSet.getIndex(3),
+    "task": "PED_123746085"
+}, { 
+    "category": "Especializado",
+    "start": "2020-01-11",
+    "end": "2020-01-13",
+    "color": colorSet.getIndex(2),
+    "task": "PED_138591605"
 }, {
     "category": "Multiusos",
-    "start": "2020-01-01",
-    "end": "2020-01-31",
-    "color": colorSet.getIndex(15),
-    "task": "Gathering requirements",
-    "disabled1":false,
-    "image1":"monica.jpg"
+    "start": "2020-01-13",
+    "end": "2020-01-20",
+    "color": colorSet.getIndex(4),
+    "task": "PED_153437125"
 }, {
-    "category": "Multiusos",
-   "start": "2020-01-01",
+    "category": "Ropa",
+    "start": "2020-01-20",
+    "end": "2020-01-27",
+    "color": colorSet.getIndex(1),
+    "task": "PED_168282645"
+}, { "category": "Multiusos",
+    "start": "2020-01-22",
+    "end": "2020-01-30",
+    "color": colorSet.getIndex(4),
+    "task": "PED_183128165"
+}, { 
+    "category": "Ropa",
+    "start": "2020-01-28",
     "end": "2020-01-31",
-    "color": colorSet.getIndex(15),
-    "task": "Development"
-}, {
-    "category": "Multiusos",
-    "start": "2020-01-01",
-    "end": "2020-01-31",
-    "color": colorSet.getIndex(15),
-    "task": "Testing and QA"
+    "color": colorSet.getIndex(1),
+    "task": "PED_197973685"
 }];
 
 chart.dateFormatter.dateFormat = "yyyy-MM-dd";
@@ -182,14 +174,14 @@ var eventSeries = chart.series.push(new am4plugins_timeline.CurveLineSeries());
 eventSeries.dataFields.dateX = "eventDate";
 eventSeries.dataFields.categoryY = "category";
 eventSeries.data = [
-    { category: "", eventDate: "2020-01-15", letter: "A", description: "Something happened here" },
-    { category: "", eventDate: "2020-01-16", letter: "B", description: "Something happened here" },
-    { category: "", eventDate: "2020-01-17", letter: "C", description: "Something happened here" },
-    { category: "", eventDate: "2020-01-18", letter: "D", description: "Something happened here" },
-    { category: "", eventDate: "2020-01-19", letter: "E", description: "Something happened here" },
-    { category: "", eventDate: "2020-01-20", letter: "F", description: "Something happened here" },
-    { category: "", eventDate: "2020-01-21", letter: "G", description: "Something happened here" },
-    { category: "", eventDate: "2020-01-31", letter: "H", description: "holi" }];
+                    { category: "", eventDate:  "2020-01-05", letter: "A", description: "Mantenimiento"},
+                    { category: "", eventDate:  "2020-01-07", letter: "B", description: "Desabasto"},
+                    { category: "", eventDate:  "2020-01-11", letter: "C", description: "Desabasto"},
+                    { category: "", eventDate:  "2020-01-16", letter: "D", description: "Mantenimiento"},
+                    { category: "", eventDate:  "2020-01-18", letter: "E", description: "Desabasto"},
+                    { category: "", eventDate:  "2020-01-20", letter: "F", description: "Mantenimiento"},
+                    { category: "", eventDate:  "2020-01-23", letter: "G", description: "Desabasto"}
+];
 eventSeries.strokeOpacity = 0;
 
 var flagBullet = eventSeries.bullets.push(new am4plugins_bullets.FlagBullet())
