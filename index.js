@@ -17,7 +17,7 @@ chart.data = [{
     "category": "Especializado",
     "start": "2020-01-10",
     "end": "2020-01-13",
-    "color": colorSet.getIndex(0),
+    "color": colorSet.getIndex(2),
     "task": "Gathering requirements"
 }, {
     "category": "Especializado",
@@ -189,7 +189,7 @@ eventSeries.data = [
     { category: "", eventDate: "2020-03-06", letter: "E", description: "Something happened here" },
     { category: "", eventDate: "2020-03-12", letter: "F", description: "Something happened here" },
     { category: "", eventDate: "2020-03-22", letter: "G", description: "Something happened here" },
-    { category: "", eventDate: "2020-03-30", letter: "H", description: "" }];
+    { category: "", eventDate: "2020-03-30", letter: "H", description: "holi" }];
 eventSeries.strokeOpacity = 0;
 
 var flagBullet = eventSeries.bullets.push(new am4plugins_bullets.FlagBullet())
