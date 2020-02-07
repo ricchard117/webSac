@@ -17,84 +17,87 @@ chart.data = [{
     "category": "Ropa",
     "start": "2020-01-01",
     "end": "2020-01-06",
-    "color": colorSet.getIndex(1),
+    "color": colorSet.getIndex(0),
     "task": "PED_19827445"
-}, { 
-    "category": "Especializado",
-    "start": "2020-01-02",
-    "end": "2020-01-03",
-    "color": colorSet.getIndex(2),
-    "task": "PED_34672965"
-}, { 
-    "category": "Mascotas",
-    "start": "2020-01-03",
-    "end": "2020-01-05",
-    "color": colorSet.getIndex(3),
-    "task": "PED_49518485"
-}, { 
-    "category": "Especializado",
-    "start": "2020-01-04",
-    "end": "2020-01-06",
-    "color": colorSet.getIndex(2),
-    "task": "PED_64364005"
-}, { 
-    "category": "Multiusos",
-    "start": "2020-01-05",
-    "end": "2020-01-12",
-    "color": colorSet.getIndex(4),
-    "task": "PED_79209525"
-}, { 
-    "category": "Especializado",
-    "start": "2020-01-06",
-    "end": "2020-01-09",
-    "color": colorSet.getIndex(2),
-    "task": "PED_94055045"
-}, { 
+}, {
     "category": "Ropa",
     "start": "2020-01-09",
     "end": "2020-01-11",
-    "color": colorSet.getIndex(1),
+    "color": colorSet.getIndex(0),
     "task": "PED_108900565"
-}, { 
-    "category": "Mascotas",
-    "start": "2020-01-10",
-    "end": "2020-01-28",
-    "color": colorSet.getIndex(3),
-    "task": "PED_123746085"
-}, { 
-    "category": "Especializado",
-    "start": "2020-01-11",
-    "end": "2020-01-13",
-    "color": colorSet.getIndex(2),
-    "task": "PED_138591605"
-}, {
-    "category": "Multiusos",
-    "start": "2020-01-13",
-    "end": "2020-01-20",
-    "color": colorSet.getIndex(4),
-    "task": "PED_153437125"
 }, {
     "category": "Ropa",
     "start": "2020-01-20",
     "end": "2020-01-27",
-    "color": colorSet.getIndex(1),
+    "color": colorSet.getIndex(0),
     "task": "PED_168282645"
-}, { "category": "Multiusos",
-    "start": "2020-01-22",
-    "end": "2020-01-30",
-    "color": colorSet.getIndex(4),
-    "task": "PED_183128165"
-}, { 
+}, {
     "category": "Ropa",
     "start": "2020-01-28",
     "end": "2020-01-31",
-    "color": colorSet.getIndex(1),
+    "color": colorSet.getIndex(0),
     "task": "PED_197973685"
+}, {
+    "category": "Especializado",
+    "start": "2020-01-02",
+    "end": "2020-01-03",
+    "color": colorSet.getIndex(5),
+    "task": "PED_34672965"
+}, {
+    "category": "Especializado",
+    "start": "2020-01-04",
+    "end": "2020-01-06",
+    "color": colorSet.getIndex(5),
+    "task": "PED_64364005"
+}, {
+    "category": "Especializado",
+    "start": "2020-01-06",
+    "end": "2020-01-09",
+    "color": colorSet.getIndex(5),
+    "task": "PED_94055045"
+}, {
+    "category": "Especializado",
+    "start": "2020-01-11",
+    "end": "2020-01-13",
+    "color": colorSet.getIndex(5),
+    "task": "PED_138591605"
+}, {
+    "category": ""
+}, {
+    "category": "Mascotas",
+    "start": "2020-01-03",
+    "end": "2020-01-05",
+    "color": colorSet.getIndex(9),
+    "task": "PED_49518485"
+}, {
+    "category": "Mascotas",
+    "start": "2020-01-10",
+    "end": "2020-01-28",
+    "color": colorSet.getIndex(9),
+    "task": "PED_123746085"
+}, {
+    "category": "Multiusos",
+    "start": "2020-01-05",
+    "end": "2020-01-12",
+    "color": colorSet.getIndex(15),
+    "task": "PED_79209525"
+}, {
+    "category": "Multiusos",
+    "start": "2020-01-13",
+    "end": "2020-01-20",
+    "color": colorSet.getIndex(15),
+    "task": "PED_153437125"
+}, {
+    "category": "Multiusos",
+    "start": "2020-01-22",
+    "end": "2020-01-30",
+    "color": colorSet.getIndex(15),
+    "task": "PED_183128165"
 }];
 
 chart.dateFormatter.dateFormat = "yyyy-MM-dd";
 chart.dateFormatter.inputDateFormat = "yyyy-MM-dd";
-chart.fontSize = 10;
+chart.fontSize = 13;
 chart.tooltipContainer.fontSize = 10;
 
 var categoryAxis = chart.yAxes.push(new am4charts.CategoryAxis());
@@ -102,12 +105,15 @@ categoryAxis.dataFields.category = "category";
 categoryAxis.renderer.grid.template.disabled = true;
 categoryAxis.renderer.labels.template.paddingRight = 25;
 categoryAxis.renderer.minGridDistance = 10;
-categoryAxis.renderer.innerRadius = -60;
-categoryAxis.renderer.radius = 60;
+categoryAxis.renderer.innerRadius = -300;
+categoryAxis.renderer.radius = 300;
 
 var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
 dateAxis.renderer.minGridDistance = 70;
-dateAxis.baseInterval = { count: 1, timeUnit: "day" };
+dateAxis.baseInterval = {
+    count: 1,
+    timeUnit: "day"
+};
 dateAxis.renderer.tooltipLocation = 0;
 dateAxis.startLocation = -0.5;
 dateAxis.renderer.line.strokeDasharray = "1,4";
@@ -174,13 +180,48 @@ var eventSeries = chart.series.push(new am4plugins_timeline.CurveLineSeries());
 eventSeries.dataFields.dateX = "eventDate";
 eventSeries.dataFields.categoryY = "category";
 eventSeries.data = [
-                    { category: "", eventDate:  "2020-01-05", letter: "A", description: "Mantenimiento"},
-                    { category: "", eventDate:  "2020-01-07", letter: "B", description: "Desabasto"},
-                    { category: "", eventDate:  "2020-01-11", letter: "C", description: "Desabasto"},
-                    { category: "", eventDate:  "2020-01-16", letter: "D", description: "Mantenimiento"},
-                    { category: "", eventDate:  "2020-01-18", letter: "E", description: "Desabasto"},
-                    { category: "", eventDate:  "2020-01-20", letter: "F", description: "Mantenimiento"},
-                    { category: "", eventDate:  "2020-01-23", letter: "G", description: "Desabasto"}
+    {
+        category: "",
+        eventDate: "2020-01-05",
+        letter: "MA",
+        description: "Mantenimiento"
+    },
+    {
+        category: "",
+        eventDate: "2020-01-07",
+        letter: "DE",
+        description: "Desabasto"
+    },
+    {
+        category: "",
+        eventDate: "2020-01-11",
+        letter: "DE",
+        description: "Desabasto"
+    },
+    {
+        category: "",
+        eventDate: "2020-01-16",
+        letter: "MA",
+        description: "Mantenimiento"
+    },
+    {
+        category: "",
+        eventDate: "2020-01-18",
+        letter: "DE",
+        description: "Desabasto"
+    },
+    {
+        category: "",
+        eventDate: "2020-01-20",
+        letter: "MA",
+        description: "Mantenimiento"
+    },
+    {
+        category: "",
+        eventDate: "2020-01-23",
+        letter: "DE",
+        description: "Desabasto"
+    }
 ];
 eventSeries.strokeOpacity = 0;
 
